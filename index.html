@@ -17,13 +17,13 @@
       <h1>Reactivity in Action</h1>
     </header>
     <section id="assignment">
-      <button @Click="AddFive()">Add 5</button>
+      <button @Click="addFive()">Add 5</button>
       <button @Click="addOne()">Add 1</button>
       <p>{{counter}}</p>
       <!-- 1) Connect the buttons and calculate a value (a number) -->
       <!-- Show "Not there yet" until you reach a result of exactly 37 -->
       <!-- Show "Too much!" if the result is greater than 37 -->
-      <p>Result: RESULT</p>
+      <p>Result: {{ displayResult }}</p>
       <!-- 2) Watch for changes in "result" and reset the value to 0 after 5 seconds -->
     </section>
   </body>

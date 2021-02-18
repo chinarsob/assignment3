@@ -8,22 +8,30 @@ new Vue({
     },
 
     computed: {
-        // displayResult()
-        // {
-        //     if(this.counter > 37)
-        //     {
-        //         return 
-        //     }
+        displayResult()
+        {
+            if(this.counter > 37)
+            {
+                return this.result = "Too much!"
+            }
         
-        //     else{
-        //     return 
-        //     }
-        // }
+            else{
+                return this.result="not there yet!!"
+            }
+            
+        }
     },
-    // watcher:
-    // {
-
-    // },
+    watch:
+    {
+        counter(value)
+        {
+            const that=this;
+            setTimeout(function()
+            {that.counter=0;},5000);
+            
+            
+        }
+    },
 
     methods: {
         addFive() {
